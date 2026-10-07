@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $matricula = $_POST["matricula"];
 
     if ($edad >=0){
-        $sql = "INSERT INTO usuarios (nombre, email, edad, grado, asistencia, matricula) VALUES ('$nombre', '$edad', '$email', '$grado', '$asistencia', '$matricula')";
+        $sql = "INSERT INTO usuarios (nombre, email, edad, grado, asistencia, matricula) VALUES ('$nombre', '$email', '$edad', '$grado', '$asistencia', '$matricula')";
     } else {
         echo "No puedes poner una edad negativa<br>";
         //<a href="crear.php">Volver al formulario</a>
