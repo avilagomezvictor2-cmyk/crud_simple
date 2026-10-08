@@ -14,7 +14,7 @@
         <input type="email" id="email" name="email" required><br><br>
         
         <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" min="0" oninput="if(this.value < 0) this.value = 0;"required><br><br>
+        <input type="number" id="edad" name="edad" min="0" max="100" oninput="if(this.value < 0) this.value = 0; if(this.value > 100) this.value = 100;"required><br><br>
         
         <label for="grado">Grado:</label>
         <input type="text" id="grado" name="grado" required><br><br>
